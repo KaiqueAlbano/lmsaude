@@ -6,9 +6,9 @@ import Button from "../button/Button";
 const Header = () => {
   return (
     <header className="header">
-      <div className="header-topo">
+      <div className="header-top container">
         <div>
-          <Iconlmsaude width={150} height={50} cursor={"point"} />
+          <Iconlmsaude width={150} height={50} />
         </div>
         <div style={{ display: "flex", gap: "30px" }}>
           <p className="labels">Serviços</p>

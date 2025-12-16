@@ -1,10 +1,14 @@
 import { useState } from "react";
 import Header from "./componentes/header/header";
+import Presentation from "./page/presentation/Presentation";
 
 function App() {
   return (
     <>
-      <Header />
+      <div className="">
+        <Header />
+        <Presentation />
+      </div>
     </>
   );
 }

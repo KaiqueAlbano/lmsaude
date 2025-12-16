@@ -1,19 +1,18 @@
 .header {
+    box-shadow: 0 0px 4px rgba(0, 0, 0, 0.08);
     background: #fff;
-    .labels {
-        color: #627084;
-        cursor: pointer;
-        font-size: 18px;
-        &:hover {
-            color: #6a99a8;
-        }
-    }
-    .header-topo {
-        padding-top: 15px;
-        padding-bottom: 15px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    .header-top {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        box-shadow: 0 0px 4px rgba(0, 0, 0, 0.08);
+    }
+
+    .labels {
+        cursor: pointer;
+        &:hover {
+            color: #6a99a8;
+        }
     }
 }
