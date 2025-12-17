@@ -1,17 +1,8 @@
 .btn {
-    border: none;
     border-radius: 10px;
-    padding: 0px 15px;
-    color: #fff;
-    height: 40px;
     cursor: pointer;
 
     &:hover {
         opacity: 0.8;
-    }
-
-    &.btn-primary {
-        background: linear-gradient(to bottom right, #437a8b, #9cd2e4);
-        font-size: 16px;
     }
 }

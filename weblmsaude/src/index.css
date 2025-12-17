@@ -1,12 +1,28 @@
   
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap');
+@import "tailwindcss";
+
+:root {
+  --gradient-one: linear-gradient(to bottom right, hsl(194, 35%, 40%), hsl(195, 57%, 75%));
+}
+@layer utilities {
+  .bg-gradient-one {
+    background: var(--gradient-one);
+  }
+}
+@theme {
+  --color-logo: hsl(195, 26%, 54%);
+  --color-blue-dark: hsl(195, 13%, 24%);
+  --color-blue-light: hsl(195, 100%, 45%);
+  --color-blue-midium:hsl(194, 55%, 31%);
+  --color-accent: hsl(194.52deg 62.81% 49.42%);
+}
 
 body {
   margin: 0;
   padding: 0;
   font-family: 'Inter', sans-serif;
   background: #f7fdff;
-  /* background: #F5F7F8; */
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -17,7 +33,4 @@ p{
   padding:0;
 }
 
-.labels {
-    color: #627084;
-    font-size: 16px;
-}
+

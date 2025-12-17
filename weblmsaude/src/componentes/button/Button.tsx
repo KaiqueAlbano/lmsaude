@@ -7,6 +7,7 @@ type ButtonProps = {
   disabled?: boolean;
   onClick?: () => void;
   type?: "button" | "submit" | "reset";
+  className?: string;
 };
 
 const Button: React.FC<ButtonProps> = ({
@@ -15,13 +16,14 @@ const Button: React.FC<ButtonProps> = ({
   disabled = false,
   onClick,
   type = "button",
+  className = "",
 }) => {
   return (
     <button
       type={type}
       disabled={disabled}
       onClick={onClick}
-      className={`btn btn-${variant}`}
+      className={`btn btn-${variant} ${className}`}
     >
       {children}
     </button>
