@@ -1,11 +1,9 @@
 .header {
     box-shadow: 0 0px 4px rgba(0, 0, 0, 0.08);
-    background: #fff;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    .header-top {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-    }
+}
+.glass-effect {
+    background-color: hsla(0, 0%, 100%, 0.8); // branco com transparência
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px); // suporte Safari
+    border: 1px solid rgba(255, 255, 255, 0.3);
 }

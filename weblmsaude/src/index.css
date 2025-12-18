@@ -4,16 +4,26 @@
 
 :root {
   --gradient-one: linear-gradient(to bottom right, hsl(194, 35%, 40%), hsl(195, 57%, 75%));
+  --card: 0 0% 100%;
+  --card-foreground: 215 25% 15%;
 }
 @layer utilities {
   .bg-gradient-one {
     background: var(--gradient-one);
+  }
+  .card-medical {
+    background-color: hsl(var(--card));
+    color: hsl(var(--card-foreground));
+    border: 1px solid hsl(var(--border) / 0.5);
+    cursor: pointer;
+    @apply rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300;
   }
 }
 @theme {
   --color-logo: hsl(195, 26%, 54%);
   --color-blue-dark: hsl(195, 13%, 24%);
   --color-blue-light: hsl(195, 100%, 45%);
+  --color-blue-baby: hsl(194, 100%, 93%);
   --color-blue-midium:hsl(194, 55%, 31%);
   --color-accent: hsl(194.52deg 62.81% 49.42%);
 }
@@ -29,7 +39,6 @@ h1, h2, h3, h4, h5, h6 {
   font-family: 'Plus Jakarta Sans', sans-serif;
 }
 p{
-  margin:0;
   padding:0;
 }
 
