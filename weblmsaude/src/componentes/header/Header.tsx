@@ -17,9 +17,12 @@ function scrollToSection(id: string) {
 const Header = () => {
   return (
     <header className="header fixed top-0 left-0 right-0 z-50 glass-effect">
-      <div className="container mx-auto px-4 sm:px-6">
+      <div className="container mx-auto px-4 sm:px-15">
         <div className="flex items-center justify-between h-16 md:h-20">
-          <a href="/" className="flex items-center gap-2">
+          <a
+            href="/"
+            className="flex items-center gap-2 animate-[fadeIn_1s_ease-in_forwards]"
+          >
             <div>
               <Iconlmsaude width={150} height={50} />
             </div>

@@ -8,8 +8,9 @@ import UtilServices from "../../services/UtilServices";
 
 const Presentation = () => {
   return (
-    <section className="presentation container mx-auto px-4 sm:px-6 pt-20">
-      <div className="mt-10 flex gap-10 items-center justify-center">
+    <section className="presentation container mx-auto px-4 sm:px-15 pt-20">
+      {/* <div className="mt-10 flex gap-10 items-center justify-center"> */}
+      <div className="mt-10 flex grid sm:grid-cols-[2fr_1fr]">
         <div>
           <div className="security">
             <IconSecurity className="text-blue-midium" width={18} />
@@ -81,7 +82,7 @@ const Presentation = () => {
           </div>
         </div>
         {/* img */}
-        <div className="relative hidden lg:flex items-center px-4">
+        <div className="relative hidden lg:flex items-center justify-center px-4 animate-[slideInRight_1s_ease-in_forwards]">
           <img
             className="rounded-3xl shadow-2xl max-w-sm"
             src={heroDoctor}

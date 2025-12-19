@@ -102,7 +102,7 @@ const Nossoservicos = () => {
   return (
     <section
       id="servicos"
-      className="nossoservicos scroll-mt-24 container mx-auto px-4 sm:px-6 mt-"
+      className="nossoservicos scroll-mt-24 container mx-auto px-4 sm:px-15 mt-15"
     >
       <div className="text-center">
         <span className="px-4 py-2 rounded-full bg-blue-baby text-blue-midium mb-4">

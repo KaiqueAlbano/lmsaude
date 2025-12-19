@@ -11,12 +11,28 @@
   .bg-gradient-one {
     background: var(--gradient-one);
   }
+  
   .card-medical {
     background-color: hsl(var(--card));
     color: hsl(var(--card-foreground));
     border: 1px solid hsl(var(--border) / 0.5);
     cursor: pointer;
     @apply rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300;
+  }
+
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  @keyframes slideInRight {
+      0% {
+          opacity: 0;
+          transform: translateX(100px); /* start from right */
+      }
+      100% {
+          opacity: 1;
+          transform: translateX(0); /* end at original position */
+      }
   }
 }
 @theme {
