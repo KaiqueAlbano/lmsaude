@@ -36,13 +36,19 @@ const Header = () => {
             </a>
             <a
               className="text-blue-dark/80 hover:text-accent transition-colors cursor-pointer"
-              onClick={() => scrollToSection("como-funciona")}
+              onClick={() => scrollToSection("comofunciona")}
             >
               Como Funciona
             </a>
             <a
               className="text-blue-dark/80 hover:text-accent transition-colors cursor-pointer"
-              onClick={() => scrollToSection("Contato")}
+              onClick={() => scrollToSection("depoimento")}
+            >
+              Depoimento
+            </a>
+            <a
+              className="text-blue-dark/80 hover:text-accent transition-colors cursor-pointer"
+              onClick={() => scrollToSection("contato")}
             >
               Contato
             </a>
