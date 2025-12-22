@@ -1,4 +1,3 @@
-import { useEffect, useState } from "react";
 import "./Presentation.scss";
 import IconSecurity from "../../icons/IconSecurity";
 import { Calendar, FileText, Clock, Shield } from "lucide-react";

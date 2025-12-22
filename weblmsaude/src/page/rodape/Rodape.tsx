@@ -1,10 +1,4 @@
-import {
-  Stethoscope,
-  Facebook,
-  Instagram,
-  Linkedin,
-  Twitter,
-} from "lucide-react";
+import { Facebook, Instagram, Linkedin, Twitter } from "lucide-react";
 import Iconlmsaude from "../../icons/Iconlmsaude";
 import UtilServices from "../../services/UtilServices";
 
@@ -12,7 +6,7 @@ const Rodape = () => {
   return (
     <footer className="bg-rodape text-blue-light-2/70 py-16 mt-25">
       <div className="px-4 sm:px-6">
-        <div className="grid md:grid-cols-2 lg:grid-cols-[1fr_1fr_2fr_2fr] gap-12 mb-12">
+        <div className="grid md:grid-cols-2 lg:grid-cols-[1fr_1fr_1fr_1fr] gap-12 mb-12">
           {/* Brand */}
           <div>
             <a href="/" className="flex items-center gap-2 mb-6">
@@ -26,24 +20,28 @@ const Rodape = () => {
             <div className="flex gap-4">
               <a
                 href="#"
+                target="_blank"
                 className="w-10 h-10 rounded-lg bg-cinza flex items-center justify-center hover:bg-accent transition-colors"
               >
                 <Facebook className="w-5 h-5" />
               </a>
               <a
-                href="#"
+                href="https://www.instagram.com/lmsaude_/"
+                target="_blank"
                 className="w-10 h-10 rounded-lg bg-cinza flex items-center justify-center hover:bg-accent transition-colors"
               >
                 <Instagram className="w-5 h-5" />
               </a>
               <a
                 href="#"
+                target="_blank"
                 className="w-10 h-10 rounded-lg bg-cinza flex items-center justify-center hover:bg-accent transition-colors"
               >
                 <Linkedin className="w-5 h-5" />
               </a>
               <a
                 href="#"
+                target="_blank"
                 className="w-10 h-10 rounded-lg bg-cinza flex items-center justify-center hover:bg-accent transition-colors"
               >
                 <Twitter className="w-5 h-5" />
@@ -149,8 +147,8 @@ const Rodape = () => {
                   (11) 93416-7610
                 </a>
               </li>
-              <li className="w-5">
-                <a className="hover:text-accent transition-colors">
+              <li className="lg:max-w-[350px]">
+                <a className="hover:text-accent transition-colors break-words">
                   contato@renovereceitasmedicas.com.br
                 </a>
               </li>

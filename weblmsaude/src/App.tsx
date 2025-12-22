@@ -1,11 +1,11 @@
-import { useState } from "react";
-import Header from "./componentes/header/header";
+import Header from "./componentes/header/Header";
 import Presentation from "./page/presentation/Presentation";
 import Nossoservicos from "./page/nossoservicos/Nossoservicos";
 import ComoFunciona from "./page/comofunciona/ComoFunciona";
 import FeedBack from "./page/feedback/FeedBack";
 import Rodape from "./page/rodape/Rodape";
 import WhatsApp from "./componentes/whatsapp/WhatsApp";
+import Contact from "./page/Contact";
 
 function App() {
   return (
@@ -17,9 +17,10 @@ function App() {
           <Nossoservicos />
           <ComoFunciona />
           <FeedBack />
+          <Contact />
         </main>
-        <WhatsApp />
         <Rodape />
+        <WhatsApp />
       </div>
     </>
   );

@@ -153,9 +153,9 @@ const Nossoservicos = () => {
               transition={{
                 duration: 1.6,
                 ease: "easeOut",
-                // delay: index * 0.15, // 👈 atraso progressivo
+                delay: index * 0.15, // 👈 atraso progressivo
               }}
-              className={`card-medical p-8  hover:shadow-xl transition-all duration-300 hover:-translate-y-1 group`}
+              className={`card-medical p-8  hover:-translate-y-1 group`}
             >
               <div
                 className={`w-14 h-14 rounded-2xl ${service.iconBg} flex items-center justify-center mb-6 group-hover:scale-110 transition-transform`}

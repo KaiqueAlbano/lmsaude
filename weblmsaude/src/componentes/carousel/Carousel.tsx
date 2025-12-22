@@ -1,12 +1,11 @@
 import useEmblaCarousel from "embla-carousel-react";
 import { useCallback } from "react";
-import AutoScroll from "embla-carousel-auto-scroll";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
 type CarouselProps = {
   children?: React.ReactNode;
   loop?: boolean;
-  align: "start";
+  align: "start" | "center";
   onClick?: () => void;
   className?: string;
   classNameChildren?: string;

@@ -3,7 +3,7 @@ import Iconlmsaude from "../../icons/Iconlmsaude";
 import "./Header.scss";
 import Button from "../button/Button";
 import UtilServices from "../../services/UtilServices";
-import { Menu, X, Stethoscope } from "lucide-react";
+import { Menu, X } from "lucide-react";
 
 function scrollToSection(id: string) {
   const el = document.getElementById(id);
@@ -51,7 +51,7 @@ const Header = () => {
             </a>
             <a
               className="text-blue-dark/80 hover:text-accent transition-colors cursor-pointer"
-              onClick={() => scrollToSection("contato")}
+              onClick={() => scrollToSection("contact")}
             >
               Contato
             </a>
@@ -100,21 +100,10 @@ const Header = () => {
               </a>
               <a
                 className="text-blue-dark/80 hover:text-accent transition-colors cursor-pointer"
-                onClick={() => scrollToSection("contato")}
+                onClick={() => scrollToSection("contact")}
               >
                 Contato
               </a>
-              {/* <Button
-                className="bg-gradient-one text-white px-4 h-10"
-                onClick={() => {
-                  UtilServices.getWhatsApp(
-                    "5511934167610",
-                    "Olá! Vim pelo site e gostaria de uma consulta médica online",
-                  );
-                }}
-              >
-                Agendar Consulta
-              </Button> */}
             </nav>
           </div>
         )}

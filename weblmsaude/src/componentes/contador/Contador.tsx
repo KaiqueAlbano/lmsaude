@@ -1,16 +1,15 @@
-import { useEffect, useState, FC } from "react";
+import { useEffect, useState } from "react";
 
-interface ContadorDecimalProps {
+type ContadorDecimalProps = {
   alvo: number;
   duracao?: number;
   casas?: number;
-}
-
-const ContadorDecimal: FC<ContadorDecimalProps> = ({
+};
+const ContadorDecimal = ({
   alvo,
   duracao = 1000,
   casas = 1,
-}) => {
+}: ContadorDecimalProps) => {
   const [valor, setValor] = useState(0);
 
   useEffect(() => {
