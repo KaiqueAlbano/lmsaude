@@ -3,6 +3,7 @@ import Iconlmsaude from "../../icons/Iconlmsaude";
 import "./Header.scss";
 import Button from "../button/Button";
 import UtilServices from "../../services/UtilServices";
+import { Menu, X, Stethoscope } from "lucide-react";
 
 function scrollToSection(id: string) {
   const el = document.getElementById(id);
@@ -15,6 +16,8 @@ function scrollToSection(id: string) {
 }
 
 const Header = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
   return (
     <header className="header fixed top-0 left-0 right-0 z-50 glass-effect">
       <div className="container mx-auto px-4 sm:px-15">
@@ -44,7 +47,7 @@ const Header = () => {
               className="text-blue-dark/80 hover:text-accent transition-colors cursor-pointer"
               onClick={() => scrollToSection("depoimento")}
             >
-              Depoimento
+              Avaliações
             </a>
             <a
               className="text-blue-dark/80 hover:text-accent transition-colors cursor-pointer"
@@ -64,7 +67,57 @@ const Header = () => {
           >
             Agendar Consulta
           </Button>
+          {/* Mobile Menu Button */}
+          <button
+            className="md:hidden p-2 text-logo cursor-pointer"
+            onClick={() => setIsMenuOpen(!isMenuOpen)}
+          >
+            {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
+          </button>
         </div>
+
+        {/* Mobile Navigation */}
+        {isMenuOpen && (
+          <div className="md:hidden py-4 border-t border-blue-dark/40 mt-2">
+            <nav className="flex flex-col gap-4">
+              <a
+                className="text-blue-dark/80 hover:text-accent transition-colors cursor-pointer"
+                onClick={() => scrollToSection("servicos")}
+              >
+                Serviços
+              </a>
+              <a
+                className="text-blue-dark/80 hover:text-accent transition-colors cursor-pointer"
+                onClick={() => scrollToSection("comofunciona")}
+              >
+                Como Funciona
+              </a>
+              <a
+                className="text-blue-dark/80 hover:text-accent transition-colors cursor-pointer"
+                onClick={() => scrollToSection("depoimento")}
+              >
+                Avaliações
+              </a>
+              <a
+                className="text-blue-dark/80 hover:text-accent transition-colors cursor-pointer"
+                onClick={() => scrollToSection("contato")}
+              >
+                Contato
+              </a>
+              {/* <Button
+                className="bg-gradient-one text-white px-4 h-10"
+                onClick={() => {
+                  UtilServices.getWhatsApp(
+                    "5511934167610",
+                    "Olá! Vim pelo site e gostaria de uma consulta médica online",
+                  );
+                }}
+              >
+                Agendar Consulta
+              </Button> */}
+            </nav>
+          </div>
+        )}
       </div>
     </header>
   );

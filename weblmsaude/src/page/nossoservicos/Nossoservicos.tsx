@@ -107,7 +107,7 @@ const Nossoservicos = () => {
   return (
     <section
       id="servicos"
-      className="nossoservicos scroll-mt-30 container mx-auto px-4 sm:px-15 mt-35"
+      className="nossoservicos sm:scroll-mt-30 scroll-mt-70 container mx-auto px-4 sm:px-15 mt-35"
     >
       <div className="text-center">
         <motion.div

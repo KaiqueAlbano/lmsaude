@@ -57,7 +57,7 @@ const ComoFunciona = () => {
   return (
     <section
       id="comofunciona"
-      className="comofunciona scroll-mt-30 container mx-auto px-4 sm:px-15 mt-35"
+      className="comofunciona sm:scroll-mt-30 scroll-mt-70 container mx-auto px-4 sm:px-15 mt-35"
     >
       <div className="text-center">
         <motion.div

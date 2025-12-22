@@ -5,6 +5,7 @@ import Nossoservicos from "./page/nossoservicos/Nossoservicos";
 import ComoFunciona from "./page/comofunciona/ComoFunciona";
 import FeedBack from "./page/feedback/FeedBack";
 import Rodape from "./page/rodape/Rodape";
+import WhatsApp from "./componentes/whatsapp/WhatsApp";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
           <ComoFunciona />
           <FeedBack />
         </main>
+        <WhatsApp />
         <Rodape />
       </div>
     </>

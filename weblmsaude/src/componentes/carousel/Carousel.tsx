@@ -17,13 +17,15 @@ const Carousel = (props: CarouselProps) => {
     {
       loop: props.loop,
       align: props.align,
+      slidesToScroll: 1, // 1 slide por vez
+      containScroll: "trimSnaps", // evita que mostre metade de outro slide
     },
     [
-      AutoScroll({
-        speed: 1,
-        stopOnInteraction: false,
-        stopOnMouseEnter: true,
-      }),
+      //   AutoScroll({
+      //     speed: 1,
+      //     stopOnInteraction: false,
+      //     stopOnMouseEnter: true,
+      //   }),
     ],
   );
 
@@ -36,9 +38,9 @@ const Carousel = (props: CarouselProps) => {
   }, [emblaApi]);
 
   return (
-    <div className="relative w-full mx-auto overflow-hidden">
+    <div className="relative w-full mx-auto overflow-hidden container mx-auto">
       {/* Viewport */}
-      <div ref={emblaRef} className="pt-5">
+      <div ref={emblaRef} className="pt-5 ">
         {/* Container */}
         <div className={`flex ${props.classNameChildren}`}>
           {props.children}

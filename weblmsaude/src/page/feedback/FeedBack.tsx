@@ -45,7 +45,7 @@ const TestimonialCard = ({
 }: {
   testimonial: (typeof testimonials)[0];
 }) => (
-  <div className="relative ml-10 flex-shrink-0 w-[350px] bg-card border border-blue-100 rounded-2xl p-6 hover:shadow-sm transition-all duration-300 hover:-translate-y-1">
+  <div className="relative ml-10 flex-shrink-0 w-[350px] border border-blue-100 rounded-2xl p-6 hover:shadow-sm transition-all duration-300 hover:-translate-y-1">
     {/* Quote Icon */}
     <div className="absolute -top-3 -left-3 w-10 h-10 bg-blue-light rounded-full flex items-center justify-center">
       <Quote className="w-5 h-5 text-white" fill="currentColor" />
@@ -80,7 +80,10 @@ const TestimonialCard = ({
 
 const FeedBack = () => {
   return (
-    <section id="depoimento" className="scroll-mt-30 mt-20 pt-10">
+    <section
+      id="depoimento"
+      className="sm:scroll-mt-30 scroll-mt-60 mt-20 pt-10"
+    >
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 mb-10">
         {/* Header */}
         <div className="text-center">
@@ -94,7 +97,7 @@ const FeedBack = () => {
             }}
           >
             <span className="px-4 py-2 rounded-full bg-blue-baby text-blue-midium mb-4">
-              Depoimentos
+              Avaliações
             </span>
           </motion.div>
           <motion.div
@@ -116,7 +119,7 @@ const FeedBack = () => {
         </div>
       </div>
 
-      <Carousel align="start" loop={true} classNameChildren="">
+      <Carousel align="center" loop={true} classNameChildren="">
         {testimonials.map((testimonial, index) => (
           <TestimonialCard key={index} testimonial={testimonial} />
         ))}
