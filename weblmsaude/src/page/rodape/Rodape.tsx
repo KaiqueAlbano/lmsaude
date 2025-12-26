@@ -1,4 +1,4 @@
-import { Facebook, Instagram, Linkedin, Twitter } from "lucide-react";
+import { Facebook, Instagram } from "lucide-react";
 import Iconlmsaude from "../../icons/Iconlmsaude";
 import UtilServices from "../../services/UtilServices";
 

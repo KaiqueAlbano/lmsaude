@@ -142,7 +142,7 @@ const Contact = () => {
           <div className="mt-8 pt-8 border-t border-border">
             <p className="text-sm text-blue-dark/80 text-center">
               Mais de{" "}
-              <span className="font-bold text-accent">3.000 pacientes</span> já
+              <span className="font-bold text-accent">3 mil pacientes</span> já
               confiam na <strong>LM Saúde</strong> como referência no cuidado
               com a saúde.
             </p>
