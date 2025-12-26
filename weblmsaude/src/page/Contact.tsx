@@ -82,7 +82,7 @@ const Contact = () => {
                 <div>
                   <p className="text-sm text-blue-dark/80">E-mail</p>
                   <p className="font-semibold text-blue-dark lg:max-w-[250px] break-words">
-                    contato@renovereceitasmedicas.com.br
+                    lmservicomedico@gmail.com
                   </p>
                 </div>
               </motion.div>
@@ -103,9 +103,12 @@ const Contact = () => {
                   <p className="text-sm text-blue-dark/80">
                     Horário de Atendimento
                   </p>
-                  <p className="font-semibold text-blue-dark">
-                    24 horas, 7 dias por semana
-                  </p>
+                  <div>
+                    <p className="font-semibold text-blue-dark max-w-[300px]">
+                      Segunda a Sexta-feira: 08:00 – 20:00 Domingo: 18:00 –
+                      22:00
+                    </p>
+                  </div>
                 </div>
               </motion.div>
             </div>
@@ -139,8 +142,9 @@ const Contact = () => {
           <div className="mt-8 pt-8 border-t border-border">
             <p className="text-sm text-blue-dark/80 text-center">
               Mais de{" "}
-              <span className="font-bold text-accent">10.000 pacientes</span> já
-              confiam na MedConsulta para cuidar da sua saúde.
+              <span className="font-bold text-accent">3.000 pacientes</span> já
+              confiam na <strong>LM Saúde</strong> como referência no cuidado
+              com a saúde.
             </p>
           </div>
         </div>

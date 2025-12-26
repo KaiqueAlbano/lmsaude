@@ -32,7 +32,7 @@ const Rodape = () => {
               >
                 <Instagram className="w-5 h-5" />
               </a>
-              <a
+              {/* <a
                 href="#"
                 target="_blank"
                 className="w-10 h-10 rounded-lg bg-cinza flex items-center justify-center hover:bg-accent transition-colors"
@@ -45,7 +45,7 @@ const Rodape = () => {
                 className="w-10 h-10 rounded-lg bg-cinza flex items-center justify-center hover:bg-accent transition-colors"
               >
                 <Twitter className="w-5 h-5" />
-              </a>
+              </a> */}
             </div>
           </div>
 
@@ -149,7 +149,7 @@ const Rodape = () => {
               </li>
               <li className="lg:max-w-[350px]">
                 <a className="hover:text-accent transition-colors break-words">
-                  contato@renovereceitasmedicas.com.br
+                  lmservicomedico@gmail.com
                 </a>
               </li>
             </ul>

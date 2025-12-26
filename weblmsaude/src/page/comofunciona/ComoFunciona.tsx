@@ -19,7 +19,7 @@ const steps = [
     number: "02",
     title: "Agende seu Horário",
     description:
-      "Agende seu horário com flexibilidade, inclusive à noite e aos sábados.",
+      "Agende seu horário com flexibilidade, inclusive à noite e fins de semana",
     icon: Clock,
   },
   {
@@ -32,8 +32,8 @@ const steps = [
 const features = [
   {
     icon: Clock,
-    title: "Atendimento 24/7",
-    description: "Disponível todos os dias, a qualquer hora.",
+    title: "Atendimento",
+    description: "Atendimento de segunda a sexta e fins de semana.",
   },
   {
     icon: Shield,
@@ -174,7 +174,11 @@ const ComoFunciona = () => {
                 <h3 className="font-display text-lg font-bold text-white mb-2">
                   {feature.title}
                 </h3>
-                <p className="text-white/80 text-sm">{feature.description}</p>
+                <div className="flex justify-center">
+                  <p className="text-white/80 text-sm max-w-[300px]">
+                    {feature.description}
+                  </p>
+                </div>
               </div>
             ))}
           </div>

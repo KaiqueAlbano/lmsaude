@@ -17,8 +17,8 @@ const Presentation = () => {
           </div>
           <div className="title">
             <h1 className="text-5xl lg:text-6xl font-bold mb-5 leading-none text-blue-dark opacity-0 animate-[fadeIn_1s_ease-in_forwards]">
-              Sua saúde em
-              <span className="bg-gradient-one"> primeiro lugar</span>
+              O cuidado que
+              <span className="bg-gradient-one"> chega até você</span>
             </h1>
             <p className="text-lg sm:text-xl max-w-lg text-blue-dark opacity-0 animate-[fadeIn_1s_ease-in_forwards]">
               Cuidado médico e psiquiátrico na palma da sua mão: profissionais
@@ -30,7 +30,7 @@ const Presentation = () => {
               <div className="w-10 h-10 flex items-center bg-blue-500/10 rounded-xl justify-center">
                 <Calendar className="text-blue-600" />
               </div>
-              <p className="text-blue-dark">Consultas Online</p>
+              <p className="text-blue-dark">Consultas 100% Online</p>
             </div>
             <div className="flex gap-2 items-center opacity-0 animate-[slideInUp_1s_ease-in_forwards] animate-delay-200">
               <div className="w-10 h-10 flex items-center bg-green-500/10 rounded-xl justify-center">
@@ -67,7 +67,7 @@ const Presentation = () => {
           <div className="flex items-center gap-6 pt-5 mt-5 pl-1">
             <div className="text-center">
               <p className="font-display text-3xl font-bold text-accent">
-                <ContadorDecimal alvo={10} duracao={1000} casas={0} />
+                <ContadorDecimal alvo={3} duracao={1000} casas={0} />
                 k+
               </p>
               <p className="text-sm text-blue-dark/80">Pacientes</p>
@@ -84,7 +84,7 @@ const Presentation = () => {
         {/* img */}
         <div className="relative hidden lg:flex items-center justify-center px-4 animate-[slideInRight_1s_ease-in_forwards]">
           <img
-            className="rounded-3xl shadow-2xl max-w-sm"
+            className="max-w-[340px] 2xl:max-w-[400px]"
             src={heroDoctor}
           ></img>
         </div>
