@@ -43,7 +43,7 @@ const features = [
   {
     icon: CreditCard,
     title: "Pagamento Fácil",
-    description: "PIX, cartão de crédito ou boleto.",
+    description: "PIX. Emitimos recibo para reembolso.",
   },
   {
     icon: CheckCircle,

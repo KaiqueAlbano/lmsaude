@@ -45,7 +45,7 @@ const services = [
     icon: Pill,
     title: "Renovação de Receitas",
     description:
-      "Cuidado em saúde mental com psiquiatra experiente, escuta ativa e sigilo..",
+      "Receba sua receita por e-mail ou WhatsApp, com segurança, praticidade e validade legal.",
     colortext: "text-green-600",
     iconBg: "bg-green-500/10",
     animation: "animate-[slideInUp_1s_ease-in_forwards] animate-delay-400",

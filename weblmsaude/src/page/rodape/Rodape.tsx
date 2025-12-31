@@ -14,12 +14,10 @@ const Rodape = () => {
                 <Iconlmsaude width={150} height={50} color="#1D2530" />
               </div>
             </a>
-            <p className="mb-6">
-              Cuidando da sua saúde com tecnologia, praticidade e segurança.
-            </p>
+            <p className="mb-6">O cuidado que chega até você!</p>
             <div className="flex gap-4">
               <a
-                href="#"
+                href="https://www.facebook.com/people/LM-Sa%C3%BAde/61584942600033/"
                 target="_blank"
                 className="w-10 h-10 rounded-lg bg-cinza flex items-center justify-center hover:bg-accent transition-colors"
               >
