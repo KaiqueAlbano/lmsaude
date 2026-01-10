@@ -147,7 +147,7 @@ const Rodape = () => {
               </li>
               <li className="lg:max-w-[350px]">
                 <a className="hover:text-accent transition-colors break-words">
-                  lmservicomedico@gmail.com
+                  administrativo@lmsaude.com.br
                 </a>
               </li>
             </ul>

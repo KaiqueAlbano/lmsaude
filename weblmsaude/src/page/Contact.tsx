@@ -81,8 +81,8 @@ const Contact = () => {
                 </div>
                 <div>
                   <p className="text-sm text-blue-dark/80">E-mail</p>
-                  <p className="font-semibold text-blue-dark lg:max-w-[250px] break-words">
-                    lmservicomedico@gmail.com
+                  <p className="font-semibold text-blue-dark lg:max-w-[260px] break-words">
+                    administrativo@lmsaude.com.br
                   </p>
                 </div>
               </motion.div>
