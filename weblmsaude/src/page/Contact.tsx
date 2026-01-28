@@ -105,7 +105,8 @@ const Contact = () => {
                   </p>
                   <div>
                     <p className="font-semibold text-blue-dark max-w-[300px]">
-                      Segunda a Sexta-feira: 08:00 – 18:00 <br />
+                      Segunda a Sexta-feira: 08:00 – 18:00 <br /> Sábado: 10:00
+                      - 14:00 <br /> Domingo: 18:00 – 22:00
                     </p>
                   </div>
                 </div>
@@ -128,6 +129,7 @@ const Contact = () => {
             <Button
               className="bg-gradient-one text-white px-4 h-10 w-full"
               onClick={() => {
+                UtilServices.gtagEvent("click.agendar_consulta_online");
                 UtilServices.getWhatsApp(
                   "5511934167610",
                   "Olá! Vim pelo site e gostaria de uma consulta médica online",

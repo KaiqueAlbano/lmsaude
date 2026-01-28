@@ -55,6 +55,7 @@ const Presentation = () => {
             <Button
               className="bg-gradient-one text-white text-lg px-4 mt-10 h-12"
               onClick={() => {
+                UtilServices.gtagEvent("click.agendar_consulta_presentation");
                 UtilServices.getWhatsApp(
                   "5511934167610",
                   "Olá! Vim pelo site e gostaria de uma consulta médica online",

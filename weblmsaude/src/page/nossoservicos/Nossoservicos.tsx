@@ -20,6 +20,7 @@ const services = [
     iconBg: "bg-blue-500/10",
     animation: "animate-[slideInUp_1s_ease-in_forwards]",
     fn: () => {
+      UtilServices.gtagEvent("click.consulta_medico_online");
       UtilServices.getWhatsApp(
         "5511934167610",
         "Olá! Vim pelo site e gostaria de uma consulta médica online",
@@ -35,6 +36,7 @@ const services = [
     iconBg: "bg-blue-light/10",
     animation: "animate-[slideInUp_1s_ease-in_forwards] animate-delay-200",
     fn: () => {
+      UtilServices.gtagEvent("click.consulta_psiquiatrica");
       UtilServices.getWhatsApp(
         "5511934167610",
         "Olá! Vim pelo site e gostaria de uma consulta psiquiatrica",
@@ -50,6 +52,7 @@ const services = [
     iconBg: "bg-green-500/10",
     animation: "animate-[slideInUp_1s_ease-in_forwards] animate-delay-400",
     fn: () => {
+      UtilServices.gtagEvent("click.renovacao_receita");
       UtilServices.getWhatsApp(
         "5511934167610",
         "Olá! Vim pelo site e gostaria de renovar minha receita",
@@ -65,6 +68,7 @@ const services = [
     iconBg: "bg-blue-500/10",
     animation: "animate-[slideInUp_1s_ease-in_forwards] animate-delay-600",
     fn: () => {
+      UtilServices.gtagEvent("click.pedidos_exames");
       UtilServices.getWhatsApp(
         "5511934167610",
         "Olá! Vim pelo site e gostaria de solicitar um exame",
@@ -80,6 +84,7 @@ const services = [
     iconBg: "bg-blue-light/10",
     animation: "animate-[slideInUp_1s_ease-in_forwards] animate-delay-800",
     fn: () => {
+      UtilServices.gtagEvent("click.laudos");
       UtilServices.getWhatsApp(
         "5511934167610",
         "Olá! Vim pelo site e gostaria de solicitar um laudo médico",
@@ -95,6 +100,7 @@ const services = [
     iconBg: "bg-green-500/10",
     animation: "animate-[slideInUp_1s_ease-in_forwards] animate-delay-1000",
     fn: () => {
+      UtilServices.gtagEvent("click.atestado_medico_online");
       UtilServices.getWhatsApp(
         "5511934167610",
         "Olá! Vim pelo site e gostaria de um atestado médico online",

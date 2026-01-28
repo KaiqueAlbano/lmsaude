@@ -5,6 +5,7 @@ const WhatsApp = () => {
   return (
     <a
       onClick={() => {
+        UtilServices.gtagEvent("click.whatsapp_flutuante");
         UtilServices.getWhatsApp(
           "5511934167610",
           "Olá! Vim pelo site e gostaria de uma consulta médica online",

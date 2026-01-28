@@ -59,6 +59,7 @@ const Header = () => {
           <Button
             className="bg-gradient-one text-white px-4 h-10 hidden sm:block"
             onClick={() => {
+              UtilServices.gtagEvent("click.agendar_consulta_header");
               UtilServices.getWhatsApp(
                 "5511934167610",
                 "Olá! Vim pelo site e gostaria de uma consulta médica online",

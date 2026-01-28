@@ -7,6 +7,13 @@ import Rodape from "./page/rodape/Rodape";
 import WhatsApp from "./componentes/whatsapp/WhatsApp";
 import Contact from "./page/Contact";
 
+declare global {
+  interface Window {
+    gtag?: (...args: any[]) => void;
+    dataLayer?: any[];
+  }
+}
+
 function App() {
   return (
     <>
