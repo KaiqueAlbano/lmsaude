@@ -1,6 +1,6 @@
 import { Facebook, Instagram } from "lucide-react";
 import Iconlmsaude from "../../icons/Iconlmsaude";
-import UtilServices from "../../services/UtilServices";
+import UtilServices, { fbqEvent } from "../../services/UtilServices";
 
 const Rodape = () => {
   return (
@@ -57,7 +57,7 @@ const Rodape = () => {
                 <a
                   className="hover:text-accent transition-colors cursor-pointer"
                   onClick={() => {
-                    UtilServices.gtagEvent("click.consulta_online_rodape");
+                    fbqEvent("Contact");
                     UtilServices.getWhatsApp(
                       "5511934167610",
                       "Olá! Vim pelo site e gostaria de uma consulta médica online",
@@ -71,9 +71,7 @@ const Rodape = () => {
                 <a
                   className="hover:text-accent transition-colors cursor-pointer"
                   onClick={() => {
-                    UtilServices.gtagEvent(
-                      "click.consulta_psiquiatrica_rodape",
-                    );
+                    fbqEvent("Contact");
                     UtilServices.getWhatsApp(
                       "5511934167610",
                       "Olá! Vim pelo site e gostaria de uma consulta psiquiatrica",
@@ -87,7 +85,7 @@ const Rodape = () => {
                 <a
                   className="hover:text-accent transition-colors cursor-pointer"
                   onClick={() => {
-                    UtilServices.gtagEvent("click.renovacao_receita_rodape");
+                    fbqEvent("Contact");
                     UtilServices.getWhatsApp(
                       "5511934167610",
                       "Olá! Vim pelo site e gostaria de renovar minha receita",
@@ -101,7 +99,7 @@ const Rodape = () => {
                 <a
                   className="hover:text-accent transition-colors cursor-pointer"
                   onClick={() => {
-                    UtilServices.gtagEvent("click.pedidos_exames_rodape");
+                    fbqEvent("Contact");
                     UtilServices.getWhatsApp(
                       "5511934167610",
                       "Olá! Vim pelo site e gostaria de solicitar um exame",
@@ -115,7 +113,7 @@ const Rodape = () => {
                 <a
                   className="hover:text-accent transition-colors cursor-pointer"
                   onClick={() => {
-                    UtilServices.gtagEvent("click.laudos_rodape");
+                    fbqEvent("Contact");
                     UtilServices.getWhatsApp(
                       "5511934167610",
                       "Olá! Vim pelo site e gostaria de solicitar um laudo médico",
@@ -129,9 +127,7 @@ const Rodape = () => {
                 <a
                   className="hover:text-accent transition-colors cursor-pointer"
                   onClick={() => {
-                    UtilServices.gtagEvent(
-                      "click.atestado_medico_online_rodape",
-                    );
+                    fbqEvent("Contact");
                     UtilServices.getWhatsApp(
                       "5511934167610",
                       "Olá! Vim pelo site e gostaria de um atestado médico online",

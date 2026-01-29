@@ -1,11 +1,11 @@
 import { MessageCircle } from "lucide-react";
-import UtilServices from "../../services/UtilServices";
+import UtilServices, { fbqEvent } from "../../services/UtilServices";
 
 const WhatsApp = () => {
   return (
     <a
       onClick={() => {
-        UtilServices.gtagEvent("click.whatsapp_flutuante");
+        fbqEvent("Contact");
         UtilServices.getWhatsApp(
           "5511934167610",
           "Olá! Vim pelo site e gostaria de uma consulta médica online",

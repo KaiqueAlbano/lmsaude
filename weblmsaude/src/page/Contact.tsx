@@ -1,7 +1,7 @@
 import { Phone, Mail, Clock } from "lucide-react";
 import Button from "../componentes/button/Button";
 import { motion } from "motion/react";
-import UtilServices from "../services/UtilServices";
+import UtilServices, { fbqEvent } from "../services/UtilServices";
 
 const Contact = () => {
   return (
@@ -129,7 +129,7 @@ const Contact = () => {
             <Button
               className="bg-gradient-one text-white px-4 h-10 w-full"
               onClick={() => {
-                UtilServices.gtagEvent("click.agendar_consulta_online");
+                fbqEvent("Contact");
                 UtilServices.getWhatsApp(
                   "5511934167610",
                   "Olá! Vim pelo site e gostaria de uma consulta médica online",

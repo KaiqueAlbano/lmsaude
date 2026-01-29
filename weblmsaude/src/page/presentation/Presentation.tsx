@@ -3,7 +3,7 @@ import IconSecurity from "../../icons/IconSecurity";
 import { Calendar, FileText, Clock, Shield } from "lucide-react";
 import Button from "../../componentes/button/Button";
 import heroDoctor from "../../assets/hero-doctor.png";
-import UtilServices from "../../services/UtilServices";
+import UtilServices, { fbqEvent } from "../../services/UtilServices";
 import ContadorDecimal from "../../componentes/contador/Contador";
 
 const Presentation = () => {
@@ -55,7 +55,7 @@ const Presentation = () => {
             <Button
               className="bg-gradient-one text-white text-lg px-4 mt-10 h-12"
               onClick={() => {
-                UtilServices.gtagEvent("click.agendar_consulta_presentation");
+                fbqEvent("Contact");
                 UtilServices.getWhatsApp(
                   "5511934167610",
                   "Olá! Vim pelo site e gostaria de uma consulta médica online",

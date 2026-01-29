@@ -2,7 +2,7 @@ import { useState } from "react";
 import Iconlmsaude from "../../icons/Iconlmsaude";
 import "./Header.scss";
 import Button from "../button/Button";
-import UtilServices from "../../services/UtilServices";
+import UtilServices, { fbqEvent } from "../../services/UtilServices";
 import { Menu, X } from "lucide-react";
 
 function scrollToSection(id: string) {
@@ -59,7 +59,7 @@ const Header = () => {
           <Button
             className="bg-gradient-one text-white px-4 h-10 hidden sm:block"
             onClick={() => {
-              UtilServices.gtagEvent("click.agendar_consulta_header");
+              fbqEvent("Contact");
               UtilServices.getWhatsApp(
                 "5511934167610",
                 "Olá! Vim pelo site e gostaria de uma consulta médica online",

@@ -24,6 +24,22 @@ function gtagEvent(
     });
   }
 }
+export function fbqEvent(
+  event: string,
+  params?: {
+    content_name?: string;
+    content_category?: string;
+    [key: string]: any;
+  },
+) {
+  if (typeof window !== "undefined" && (window as any).fbq) {
+    (window as any).fbq("track", event, {
+      content_name: params?.content_name ?? "Botão WhatsApp",
+      content_category: params?.content_category ?? "Lead",
+      ...params,
+    });
+  }
+}
 
 const UtilServices = {
   getWhatsApp(numero: string, desc: string): void {
