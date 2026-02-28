@@ -104,9 +104,12 @@ const Contact = () => {
                     Horário de Atendimento
                   </p>
                   <div>
-                    <p className="font-semibold text-blue-dark max-w-[300px]">
+                    {/* <p className="font-semibold text-blue-dark max-w-[300px]">
                       Segunda a Sexta-feira: 08:00 – 18:00 <br /> Sábado: 10:00
                       - 14:00 <br /> Domingo: 18:00 – 22:00
+                    </p> */}
+                    <p className="font-semibold text-blue-dark max-w-[300px]">
+                      24 horas por dia, 7 dias por semana.
                     </p>
                   </div>
                 </div>

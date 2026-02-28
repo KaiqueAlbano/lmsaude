@@ -33,7 +33,8 @@ const features = [
   {
     icon: Clock,
     title: "Atendimento",
-    description: "Atendimento de segunda a sexta e fins de semana.",
+    // description: "Atendimento de segunda a sexta e fins de semana.",
+    description: "Atendimento disponível 24 horas por dia, 7 dias por semana.",
   },
   {
     icon: Shield,

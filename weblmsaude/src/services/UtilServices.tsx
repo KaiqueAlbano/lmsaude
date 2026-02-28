@@ -12,7 +12,9 @@ function getEmail(email: string, subject: string, body: string): void {
   )}&body=${encodeURIComponent(body)}`;
   window.location.href = url;
 }
-function gtagEvent(
+
+//GOOGLE TAGMENTO.
+export function gtagEvent(
   event: string,
   eventLabel: string = "whatsapp",
   eventCategory: string = "engagement",
@@ -39,6 +41,25 @@ export function fbqEvent(
       ...params,
     });
   }
+  gtag_report_conversion();
+}
+function gtag_report_conversion() {
+  // var callback = function () {
+  //   if (typeof url != "undefined") {
+  //     window.location.href = url;
+  //   }
+  // };
+  if (typeof window !== "undefined" && window.gtag) {
+    window.gtag("event", "conversion", {
+      send_to: "AW-17383696913/y60TCKet_vobEJHUmOFA",
+      value: 1.0,
+      currency: "BRL",
+      // event_callback: callback,
+    });
+  } else {
+    // callback();
+  }
+  return false;
 }
 
 const UtilServices = {
@@ -47,9 +68,6 @@ const UtilServices = {
   },
   getEmail(email: string, subject: string, body: string): void {
     return getEmail(email, subject, body);
-  },
-  gtagEvent(event: string, eventLabel?: string, eventCategory?: string): void {
-    return gtagEvent(event, eventLabel, eventCategory);
   },
 };
 
